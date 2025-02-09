@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز العيادة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #87cefa);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            color: #1e90ff;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .image-container {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 3px solid #1e90ff;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #1e90ff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 15px 0;
+            box-shadow: 0 4px #1565c0; /* 3D shadow */
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        a:active {
+            box-shadow: 0 2px #1565c0; /* Adjust shadow on press */
+            transform: translateY(2px); /* Press effect */
+        }
+        a:hover {
+            background-color: #4682b4;
+            transform: scale(1.03);
+        }
+        .section-title {
+            font-size: 20px;
+            color: #1e90ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #87cefa;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .map-container p {
+            margin: 0;
+            color: #1e90ff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .map-container a {
+            text-align: center;
+            width: 80%; /* Ensure the button is responsive */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا بكم في عيادة أ.د. على قطب</h1>
+        <div class="image-container">
+            <img src="2021-09-09.jpg" alt="صورة الدكتور">
+        </div>
+
+        <!-- Booking Section -->
+        <p class="section-title">حجز العيادة</p>
+        <a href="https://calendly.com/alikotb/neurosurgery" target="_blank">
+            <i class="fa fa-calendar-alt"></i> اضغط هنا للحجز
+        </a>
+
+        <!-- WhatsApp Contacts Section -->
+        <p class="section-title">التواصل مع العيادة و العمليات</p>
+        <a href="https://wa.me/201014151508" target="_blank">
+            <i class="fab fa-whatsapp"></i> التواصل مع العيادة
+        </a>
+        <a href="https://wa.me/201090191039" target="_blank">
+            <i class="fab fa-whatsapp"></i> التواصل مع العمليات
+        </a>
+
+        <!-- Wadi El Nile Section -->
+        <p class="section-title">حجز وادي النيل</p>
+        <a href="https://calendly.com/alikotb/wadi" target="_blank">
+            <i class="fa fa-hospital"></i> اضغط هنا للحجز
+        </a>
+        <a href="https://wa.me/201156222123" target="_blank">
+            <i class="fab fa-whatsapp"></i> التواصل لحجز العمليات
+        </a>
+
+        <!-- Location Section -->
+        <div class="map-container">
+            <p>مكان العيادة:</p>
+            <a href="https://maps.app.goo.gl/kneM2xHcoW8rMNJ5A?g_st=iw" target="_blank">
+                <i class="fa fa-map-marker-alt"></i> عرض الموقع
+            </a>
+        </div>
+    </div>
+</body>
+</html>
