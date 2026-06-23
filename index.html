@@ -1,137 +1,228 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حجز العيادة</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: linear-gradient(135deg, #1e90ff, #87cefa);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            width: 90%;
-            text-align: center;
-        }
-        h1 {
-            color: #1e90ff;
-            font-size: 24px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .image-container {
-            width: 120px;
-            height: 120px;
-            overflow: hidden;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            border: 3px solid #1e90ff;
-        }
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        a {
-            display: block;
-            text-decoration: none;
-            color: #ffffff;
-            background-color: #1e90ff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 15px 0;
-            box-shadow: 0 4px #1565c0; /* 3D shadow */
-            transition: all 0.2s ease;
-            text-align: center;
-        }
-        a:active {
-            box-shadow: 0 2px #1565c0; /* Adjust shadow on press */
-            transform: translateY(2px); /* Press effect */
-        }
-        a:hover {
-            background-color: #4682b4;
-            transform: scale(1.03);
-        }
-        .section-title {
-            font-size: 20px;
-            color: #1e90ff;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #87cefa;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .map-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .map-container p {
-            margin: 0;
-            color: #1e90ff;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .map-container a {
-            text-align: center;
-            width: 80%; /* Ensure the button is responsive */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أستاذ دكتور علي قطب</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Cairo,sans-serif;
+  direction:rtl;
+  background:linear-gradient(160deg,#5bc8f5,#dff2ff);
+  min-height:100vh;
+  padding:16px;
+}
+.card{
+  background:white;
+  max-width:760px;
+  margin:auto;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 8px 40px rgba(0,90,180,.18);
+}
+.hero{
+  background:linear-gradient(135deg,#0a6ec4,#0e9ad4);
+  padding:20px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.photo-ring{
+  width:82px;
+  height:82px;
+  min-width:82px;
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid white;
+}
+.photo-ring img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.hero h1{
+  color:white;
+  font-size:20px;
+  font-weight:900;
+}
+.role{
+  color:#e8f7ff;
+  font-size:13px;
+}
+.live{
+  display:inline-flex;
+  margin-top:8px;
+  color:white;
+  background:rgba(255,255,255,.18);
+  padding:4px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
+.body{padding:18px}
+.sec{margin-bottom:16px}
+.sec-label{
+  font-size:12px;
+  font-weight:900;
+  color:#0a6ec4;
+  border-bottom:1px solid #d8ecf8;
+  padding-bottom:6px;
+  margin-bottom:10px;
+}
+.grid,.grid-3{
+  display:grid;
+  gap:10px;
+}
+.grid{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:1fr 1fr 1fr}
+
+.btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px;
+  border-radius:14px;
+  text-decoration:none;
+  transition:.15s;
+}
+.btn:active{transform:scale(.97)}
+.ico{
+  width:38px;
+  height:38px;
+  border-radius:11px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  color:white;
+}
+.txt strong{
+  display:block;
+  font-size:14px;
+  color:inherit;
+}
+.txt small{
+  display:block;
+  font-size:11px;
+  opacity:.75;
+}
+.b-blue{background:#e8f4ff;color:#0a5fa0;border:1px solid #c0dcf5}
+.b-blue .ico{background:#0a6ec4}
+.b-wa{background:#edfbf3;color:#0a6b35;border:1px solid #b8e8cc}
+.b-wa .ico{background:#25D366}
+.b-desktop{background:#f5f5f8;color:#333;border:1px solid #ddd}
+.b-desktop .ico{background:#555}
+.b-map{background:#fff2ec;color:#b04010;border:1px solid #f5ccb0}
+.b-map .ico{background:#e8521f}
+.b-tukh{background:#edf8ee;color:#1a6b30;border:1px solid #b8debb}
+.b-tukh .ico{background:#28a745}
+.footer{
+  text-align:center;
+  padding:12px;
+  font-size:11px;
+  color:#7aa7c7;
+  border-top:1px solid #e0eef8;
+}
+
+@media(max-width:650px){
+  body{padding:10px}
+  .grid,.grid-3{grid-template-columns:1fr}
+  .hero{padding:16px}
+  .hero h1{font-size:17px}
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>مرحبًا بكم في عيادة أ.د. على قطب</h1>
-        <div class="image-container">
-            <img src="2021-09-09.jpg" alt="صورة الدكتور">
-        </div>
 
-        <!-- Booking Section -->
-        <p class="section-title">حجز العيادة</p>
-        <a href="https://calendly.com/alikotb/neurosurgery" target="_blank">
-            <i class="fa fa-calendar-alt"></i> اضغط هنا للحجز
-        </a>
+<div class="card">
 
-        <!-- WhatsApp Contacts Section -->
-        <p class="section-title">التواصل مع العيادة و العمليات</p>
-        <a href="https://wa.me/201014151508" target="_blank">
-            <i class="fab fa-whatsapp"></i> التواصل مع العيادة
-        </a>
-        <a href="https://wa.me/201090191039" target="_blank">
-            <i class="fab fa-whatsapp"></i> التواصل مع العمليات
-        </a>
-
-        <!-- Wadi El Nile Section -->
-        <p class="section-title">حجز وادي النيل</p>
-        <a href="https://calendly.com/alikotb/wadi" target="_blank">
-            <i class="fa fa-hospital"></i> اضغط هنا للحجز
-        </a>
-        <a href="https://wa.me/201156222123" target="_blank">
-            <i class="fab fa-whatsapp"></i> التواصل لحجز العمليات
-        </a>
-
-        <!-- Location Section -->
-        <div class="map-container">
-            <p>مكان العيادة:</p>
-            <a href="https://maps.app.goo.gl/kneM2xHcoW8rMNJ5A?g_st=iw" target="_blank">
-                <i class="fa fa-map-marker-alt"></i> عرض الموقع
-            </a>
-        </div>
+  <div class="hero">
+    <div class="photo-ring">
+      <img src="2021-09-09.jpg" alt="أستاذ دكتور علي قطب">
     </div>
+
+    <div>
+      <h1>أستاذ دكتور علي قطب</h1>
+      <div class="role">أستاذ جراحة المخ والأعصاب والعمود الفقري</div>
+      <div class="live">● متاح للحجز</div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="sec">
+      <div class="sec-label">حجز المواعيد</div>
+
+      <div class="grid-3">
+        <a href="https://dralikotb.netlify.app/" target="_blank" class="btn b-blue">
+          <div class="ico"><i class="fa fa-calendar-check"></i></div>
+          <div class="txt"><strong>عيادة القاهرة</strong><small>حجز مباشر</small></div>
+        </a>
+
+        <a href="https://dralikotb.netlify.app/" target="_blank" class="btn b-blue">
+          <div class="ico"><i class="fa fa-hospital"></i></div>
+          <div class="txt"><strong>مصر الجديدة</strong><small>حجز العيادة</small></div>
+        </a>
+
+        <a href="https://dralikotb.netlify.app/" target="_blank" class="btn b-tukh">
+          <div class="ico"><i class="fa fa-calendar-plus"></i></div>
+          <div class="txt"><strong>عيادة طوخ</strong><small>حجز مباشر</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-label">التواصل عبر واتساب</div>
+
+      <div class="grid">
+        <a href="https://wa.me/201014151508" target="_blank" class="btn b-wa">
+          <div class="ico"><i class="fab fa-whatsapp"></i></div>
+          <div class="txt"><strong>عيادة القاهرة</strong><small>iPhone / Android</small></div>
+        </a>
+
+        <a href="https://wa.me/201090191039" target="_blank" class="btn b-wa">
+          <div class="ico"><i class="fab fa-whatsapp"></i></div>
+          <div class="txt"><strong>عمليات هليوبوليس</strong><small>iPhone / Android</small></div>
+        </a>
+
+        <a href="https://wa.me/201001703613" target="_blank" class="btn b-wa">
+          <div class="ico"><i class="fab fa-whatsapp"></i></div>
+          <div class="txt"><strong>وادي النيل</strong><small>iPhone / Android</small></div>
+        </a>
+
+        <a href="https://wa.me/201023967251" target="_blank" class="btn b-wa">
+          <div class="ico"><i class="fab fa-whatsapp"></i></div>
+          <div class="txt"><strong>استفسارات عامة</strong><small>موبايل</small></div>
+        </a>
+
+        <a href="https://web.whatsapp.com/send?phone=201023967251" target="_blank" class="btn b-desktop">
+          <div class="ico"><i class="fa fa-desktop"></i></div>
+          <div class="txt"><strong>واتساب الكمبيوتر</strong><small>WhatsApp Web</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-label">الموقع</div>
+
+      <a href="https://maps.app.goo.gl/kneM2xHcoW8rMNJ5A?g_st=iw" target="_blank" class="btn b-map">
+        <div class="ico"><i class="fa fa-map-marker-alt"></i></div>
+        <div class="txt"><strong>عرض الموقع على الخريطة</strong><small>Google Maps</small></div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    أ.د. علي قطب · جراحة المخ والأعصاب · القاهرة
+  </div>
+
+</div>
+
 </body>
 </html>
