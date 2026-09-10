@@ -20,7 +20,6 @@
   >
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -31,15 +30,12 @@
       min-height: 100vh;
       direction: rtl;
       font-family: "Cairo", Tahoma, Arial, sans-serif;
-
-      background:
-        linear-gradient(
-          160deg,
-          #65c9ee 0%,
-          #b9e9fb 55%,
-          #e9f8ff 100%
-        );
-
+      background: linear-gradient(
+        160deg,
+        #65c9ee 0%,
+        #b9e9fb 55%,
+        #e9f8ff 100%
+      );
       color: #183b5c;
       padding: 22px 15px;
     }
@@ -52,14 +48,10 @@
       width: 100%;
       max-width: 860px;
       margin: auto;
-
       background: #ffffff;
       border-radius: 28px;
-
       overflow: hidden;
-
-      box-shadow:
-        0 20px 55px rgba(18, 84, 130, 0.22);
+      box-shadow: 0 20px 55px rgba(18, 84, 130, 0.22);
     }
 
     /* =====================================================
@@ -69,42 +61,38 @@
     .hero {
       position: relative;
       padding: 34px 32px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #0f6fc4 0%,
-          #148fce 55%,
-          #29acd5 100%
-        );
-
+      background: linear-gradient(
+        135deg,
+        #0f6fc4 0%,
+        #148fce 55%,
+        #29acd5 100%
+      );
       color: white;
     }
 
     .hero-inner {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 24px;
     }
 
     .doctor-circle {
-      width: 96px;
-      height: 96px;
-      min-width: 96px;
-
+      width: 112px;
+      height: 112px;
+      min-width: 112px;
       border-radius: 50%;
-      border: 4px solid rgba(255,255,255,.96);
+      overflow: hidden;
+      border: 4px solid #ffffff;
+      background: #ffffff;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, .22);
+    }
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: rgba(255,255,255,.10);
-
-      box-shadow:
-        0 8px 22px rgba(0,0,0,.14);
-
-      font-size: 40px;
+    .doctor-circle img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
 
     .doctor-info {
@@ -116,11 +104,8 @@
       font-weight: 900;
       line-height: 1.4;
       margin-bottom: 6px;
-
       color: #ffffff;
-
-      text-shadow:
-        0 2px 5px rgba(0,0,0,.16);
+      text-shadow: 0 2px 5px rgba(0, 0, 0, .16);
     }
 
     .doctor-info p {
@@ -134,14 +119,10 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-
       margin-top: 12px;
       padding: 7px 14px;
-
       border-radius: 20px;
-
-      background: rgba(255,255,255,.18);
-
+      background: rgba(255, 255, 255, .18);
       font-size: 13px;
       font-weight: 700;
     }
@@ -175,24 +156,17 @@
       display: flex;
       align-items: center;
       gap: 10px;
-
       padding: 11px 15px;
       margin-bottom: 16px;
-
       border-radius: 13px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #e5f3ff,
-          #f5faff
-        );
-
+      background: linear-gradient(
+        135deg,
+        #e5f3ff,
+        #f5faff
+      );
       border-right: 5px solid #1476c9;
-
       font-size: 22px;
       font-weight: 900;
-
       color: #0b5fa8;
     }
 
@@ -209,39 +183,28 @@
       display: flex;
       align-items: flex-start;
       gap: 13px;
-
       padding: 18px 20px;
       margin-bottom: 18px;
-
       background: #f4f9ff;
-
       border: 1px solid #c9e2f6;
       border-radius: 16px;
-
       color: #395f7b;
-
       font-size: 18px;
       font-weight: 700;
       line-height: 2;
-
-      box-shadow:
-        0 5px 16px rgba(45,105,150,.07);
+      box-shadow: 0 5px 16px rgba(45, 105, 150, .07);
     }
 
     .notice-icon {
       width: 42px;
       height: 42px;
       min-width: 42px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       border-radius: 11px;
-
       background: #dceeff;
       color: #0f76c8;
-
       font-size: 20px;
     }
 
@@ -253,15 +216,10 @@
       display: flex;
       align-items: center;
       gap: 15px;
-
       width: 100%;
-
       padding: 17px 19px;
-
       border-radius: 17px;
-
       text-decoration: none;
-
       transition:
         transform .20s ease,
         box-shadow .20s ease,
@@ -280,13 +238,10 @@
       width: 52px;
       height: 52px;
       min-width: 52px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       border-radius: 14px;
-
       color: white;
       font-size: 22px;
     }
@@ -299,17 +254,14 @@
     .action-text strong {
       display: block;
       margin-bottom: 3px;
-
       font-size: 18px;
       font-weight: 900;
     }
 
     .action-text small {
       display: block;
-
       font-size: 13px;
       font-weight: 600;
-
       opacity: .76;
     }
 
@@ -324,58 +276,43 @@
 
     .booking-btn {
       min-height: 128px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #dff1ff,
-          #cfe8ff
-        );
-
+      background: linear-gradient(
+        135deg,
+        #dff1ff,
+        #cfe8ff
+      );
       border: 2px solid #9ecdf2;
-
       color: #0b5fa8;
-
-      box-shadow:
-        0 10px 26px rgba(19,101,170,.16);
+      box-shadow: 0 10px 26px rgba(19, 101, 170, .16);
     }
 
     .booking-btn:hover {
       border-color: #78b5e6;
-
-      box-shadow:
-        0 14px 31px rgba(19,101,170,.22);
+      box-shadow: 0 14px 31px rgba(19, 101, 170, .22);
     }
 
     .booking-btn .action-icon {
       width: 70px;
       height: 70px;
       min-width: 70px;
-
       font-size: 31px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #1784d9,
-          #0d65b6
-        );
-
-      box-shadow:
-        0 7px 18px rgba(13,101,182,.25);
+      background: linear-gradient(
+        135deg,
+        #1784d9,
+        #0d65b6
+      );
+      box-shadow: 0 7px 18px rgba(13, 101, 182, .25);
     }
 
     .booking-btn .action-text strong {
       font-size: 27px;
       font-weight: 900;
-
       color: #0d5c9f;
     }
 
     .booking-btn .action-text small {
       font-size: 16px;
       font-weight: 700;
-
       color: #5f88a9;
     }
 
@@ -387,19 +324,12 @@
       display: flex;
       align-items: center;
       gap: 13px;
-
       margin-top: 16px;
-
       padding: 18px 19px;
-
       border-radius: 16px;
-
       background: #edf9f1;
-
       border: 1px solid #bde3c8;
-
       color: #2b7045;
-
       font-size: 16px;
       font-weight: 700;
       line-height: 1.9;
@@ -409,17 +339,12 @@
       width: 44px;
       height: 44px;
       min-width: 44px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       border-radius: 11px;
-
       background: #32b963;
-
       color: white;
-
       font-size: 19px;
     }
 
@@ -429,57 +354,44 @@
 
     .wa-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 13px;
     }
 
     .wa-btn {
       min-height: 92px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #ecfff3,
-          #dff8e8
-        );
-
+      background: linear-gradient(
+        135deg,
+        #ecfff3,
+        #dff8e8
+      );
       border: 1px solid #a9dfbd;
-
       color: #0c6a35;
     }
 
     .wa-btn:hover {
       border-color: #75cea0;
-
-      box-shadow:
-        0 10px 22px rgba(37, 211, 102, .15);
+      box-shadow: 0 10px 22px rgba(37, 211, 102, .15);
     }
 
     .wa-btn .action-icon {
-      background:
-        linear-gradient(
-          135deg,
-          #2bd66a,
-          #15b653
-        );
-
+      background: linear-gradient(
+        135deg,
+        #2bd66a,
+        #15b653
+      );
       font-size: 24px;
     }
 
     .wa-btn .action-text strong {
       font-size: 20px;
       font-weight: 900;
-
       color: #0d6a38;
     }
 
     .wa-btn .action-text small {
       font-size: 13px;
       font-weight: 600;
-
       color: #5a9771;
     }
 
@@ -489,34 +401,27 @@
 
     .desktop-btn {
       min-height: 92px;
-
       background: #f5f6f8;
-
       border: 1px solid #d8dbe0;
-
       color: #3c4148;
     }
 
     .desktop-btn:hover {
       border-color: #aeb4bc;
-
-      box-shadow:
-        0 8px 18px rgba(50,50,50,.08);
+      box-shadow: 0 8px 18px rgba(50, 50, 50, .08);
     }
 
     .desktop-btn .action-icon {
-      background:
-        linear-gradient(
-          135deg,
-          #62676e,
-          #41464d
-        );
+      background: linear-gradient(
+        135deg,
+        #62676e,
+        #41464d
+      );
     }
 
     .desktop-btn .action-text strong {
       font-size: 20px;
       font-weight: 900;
-
       color: #303840;
     }
 
@@ -530,51 +435,40 @@
 
     .map-btn {
       min-height: 100px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #fff1e9,
-          #ffe3d4
-        );
-
+      background: linear-gradient(
+        135deg,
+        #fff1e9,
+        #ffe3d4
+      );
       border: 1px solid #f1b798;
-
       color: #b74317;
     }
 
     .map-btn:hover {
       border-color: #eb966e;
-
-      box-shadow:
-        0 10px 24px rgba(232,82,31,.14);
+      box-shadow: 0 10px 24px rgba(232, 82, 31, .14);
     }
 
     .map-btn .action-icon {
       width: 58px;
       height: 58px;
       min-width: 58px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #f56533,
-          #df4218
-        );
-
+      background: linear-gradient(
+        135deg,
+        #f56533,
+        #df4218
+      );
       font-size: 25px;
     }
 
     .map-btn .action-text strong {
       font-size: 22px;
       font-weight: 900;
-
       color: #b64219;
     }
 
     .map-btn .action-text small {
       font-size: 14px;
-
       color: #c3795b;
     }
 
@@ -584,14 +478,10 @@
 
     .footer {
       padding: 21px;
-
       text-align: center;
-
       border-top: 1px solid #e4edf4;
-
       font-size: 14px;
       font-weight: 700;
-
       color: #6f9abb;
     }
 
@@ -600,7 +490,6 @@
     ===================================================== */
 
     @media (max-width: 650px) {
-
       body {
         padding: 9px;
       }
@@ -618,11 +507,9 @@
       }
 
       .doctor-circle {
-        width: 72px;
-        height: 72px;
-        min-width: 72px;
-
-        font-size: 29px;
+        width: 84px;
+        height: 84px;
+        min-width: 84px;
       }
 
       .doctor-info h1 {
@@ -653,7 +540,6 @@
         width: 56px;
         height: 56px;
         min-width: 56px;
-
         font-size: 25px;
       }
 
@@ -688,35 +574,30 @@
       .info-box {
         font-size: 14px;
       }
-
     }
-
   </style>
 
 </head>
-
 
 <body>
 
   <div class="page-card">
 
-    <!-- ==================================================
-         HEADER
-    =================================================== -->
-
+    <!-- HEADER -->
     <div class="hero">
 
       <div class="hero-inner">
 
         <div class="doctor-circle">
-          <i class="fa-solid fa-user-doctor"></i>
+          <img
+            src="https://raw.githubusercontent.com/profalikotb/clinic/main/2021-09-09.jpg"
+            alt="أ.د. علي قطب"
+          >
         </div>
 
         <div class="doctor-info">
 
-          <h1>
-            أستاذ دكتور علي قطب
-          </h1>
+          <h1>أستاذ دكتور علي قطب</h1>
 
           <p>
             أستاذ جراحة المخ والأعصاب والعمود الفقري
@@ -737,10 +618,7 @@
     <div class="content">
 
 
-      <!-- ==================================================
-           BOOKING
-      =================================================== -->
-
+      <!-- BOOKING -->
       <section class="section">
 
         <div class="section-title">
@@ -808,10 +686,7 @@
       </section>
 
 
-      <!-- ==================================================
-           WHATSAPP
-      =================================================== -->
-
+      <!-- WHATSAPP -->
       <section class="section">
 
         <div class="section-title">
@@ -822,8 +697,7 @@
 
         <div class="wa-grid">
 
-
-          <!-- Cairo Clinic -->
+          <!-- Cairo -->
           <a
             href="https://wa.me/201014151508"
             target="_blank"
@@ -836,21 +710,14 @@
             </div>
 
             <div class="action-text">
-
-              <strong>
-                عيادة القاهرة
-              </strong>
-
-              <small>
-                iPhone / Android
-              </small>
-
+              <strong>عيادة القاهرة</strong>
+              <small>iPhone / Android</small>
             </div>
 
           </a>
 
 
-          <!-- Heliopolis Operations -->
+          <!-- Wadi El Nile -->
           <a
             href="https://wa.me/201090191039"
             target="_blank"
@@ -863,42 +730,8 @@
             </div>
 
             <div class="action-text">
-
-              <strong>
-                عمليات هليوبوليس
-              </strong>
-
-              <small>
-                iPhone / Android
-              </small>
-
-            </div>
-
-          </a>
-
-
-          <!-- Wadi El Nile -->
-          <a
-            href="https://wa.me/201001703613"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="action-btn wa-btn"
-          >
-
-            <div class="action-icon">
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-
-            <div class="action-text">
-
-              <strong>
-                وادي النيل
-              </strong>
-
-              <small>
-                iPhone / Android
-              </small>
-
+              <strong>وادي النيل</strong>
+              <small>iPhone / Android</small>
             </div>
 
           </a>
@@ -917,15 +750,8 @@
             </div>
 
             <div class="action-text">
-
-              <strong>
-                استفسارات عامة
-              </strong>
-
-              <small>
-                موبايل
-              </small>
-
+              <strong>استفسارات عامة</strong>
+              <small>موبايل</small>
             </div>
 
           </a>
@@ -944,29 +770,18 @@
             </div>
 
             <div class="action-text">
-
-              <strong>
-                واتساب الكمبيوتر
-              </strong>
-
-              <small>
-                WhatsApp Web
-              </small>
-
+              <strong>واتساب الكمبيوتر</strong>
+              <small>WhatsApp Web</small>
             </div>
 
           </a>
-
 
         </div>
 
       </section>
 
 
-      <!-- ==================================================
-           LOCATION
-      =================================================== -->
-
+      <!-- LOCATION -->
       <section class="section">
 
         <div class="section-title">
@@ -987,15 +802,8 @@
           </div>
 
           <div class="action-text">
-
-            <strong>
-              عرض الموقع على الخريطة
-            </strong>
-
-            <small>
-              Google Maps
-            </small>
-
+            <strong>عرض الموقع على الخريطة</strong>
+            <small>Google Maps</small>
           </div>
 
           <div class="action-arrow">
@@ -1006,18 +814,13 @@
 
       </section>
 
-
     </div>
 
 
-    <!-- ==================================================
-         FOOTER
-    =================================================== -->
-
+    <!-- FOOTER -->
     <div class="footer">
       أ.د. علي قطب · جراحة المخ والأعصاب والعمود الفقري · القاهرة
     </div>
-
 
   </div>
 
