@@ -1,228 +1,1026 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أستاذ دكتور علي قطب</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <title>أستاذ دكتور علي قطب</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family:Cairo,sans-serif;
-  direction:rtl;
-  background:linear-gradient(160deg,#5bc8f5,#dff2ff);
-  min-height:100vh;
-  padding:16px;
-}
-.card{
-  background:white;
-  max-width:760px;
-  margin:auto;
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 8px 40px rgba(0,90,180,.18);
-}
-.hero{
-  background:linear-gradient(135deg,#0a6ec4,#0e9ad4);
-  padding:20px;
-  display:flex;
-  align-items:center;
-  gap:16px;
-}
-.photo-ring{
-  width:82px;
-  height:82px;
-  min-width:82px;
-  border-radius:50%;
-  overflow:hidden;
-  border:3px solid white;
-}
-.photo-ring img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.hero h1{
-  color:white;
-  font-size:20px;
-  font-weight:900;
-}
-.role{
-  color:#e8f7ff;
-  font-size:13px;
-}
-.live{
-  display:inline-flex;
-  margin-top:8px;
-  color:white;
-  background:rgba(255,255,255,.18);
-  padding:4px 12px;
-  border-radius:20px;
-  font-size:12px;
-}
-.body{padding:18px}
-.sec{margin-bottom:16px}
-.sec-label{
-  font-size:12px;
-  font-weight:900;
-  color:#0a6ec4;
-  border-bottom:1px solid #d8ecf8;
-  padding-bottom:6px;
-  margin-bottom:10px;
-}
-.grid,.grid-3{
-  display:grid;
-  gap:10px;
-}
-.grid{grid-template-columns:1fr 1fr}
-.grid-3{grid-template-columns:1fr 1fr 1fr}
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
 
-.btn{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:12px;
-  border-radius:14px;
-  text-decoration:none;
-  transition:.15s;
-}
-.btn:active{transform:scale(.97)}
-.ico{
-  width:38px;
-  height:38px;
-  border-radius:11px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:18px;
-  color:white;
-}
-.txt strong{
-  display:block;
-  font-size:14px;
-  color:inherit;
-}
-.txt small{
-  display:block;
-  font-size:11px;
-  opacity:.75;
-}
-.b-blue{background:#e8f4ff;color:#0a5fa0;border:1px solid #c0dcf5}
-.b-blue .ico{background:#0a6ec4}
-.b-wa{background:#edfbf3;color:#0a6b35;border:1px solid #b8e8cc}
-.b-wa .ico{background:#25D366}
-.b-desktop{background:#f5f5f8;color:#333;border:1px solid #ddd}
-.b-desktop .ico{background:#555}
-.b-map{background:#fff2ec;color:#b04010;border:1px solid #f5ccb0}
-.b-map .ico{background:#e8521f}
-.b-tukh{background:#edf8ee;color:#1a6b30;border:1px solid #b8debb}
-.b-tukh .ico{background:#28a745}
-.footer{
-  text-align:center;
-  padding:12px;
-  font-size:11px;
-  color:#7aa7c7;
-  border-top:1px solid #e0eef8;
-}
+  <!-- Cairo Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
-@media(max-width:650px){
-  body{padding:10px}
-  .grid,.grid-3{grid-template-columns:1fr}
-  .hero{padding:16px}
-  .hero h1{font-size:17px}
-}
-</style>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      direction: rtl;
+      font-family: "Cairo", Tahoma, Arial, sans-serif;
+
+      background:
+        linear-gradient(
+          160deg,
+          #65c9ee 0%,
+          #b9e9fb 55%,
+          #e9f8ff 100%
+        );
+
+      color: #183b5c;
+      padding: 22px 15px;
+    }
+
+    /* =====================================================
+       MAIN CARD
+    ===================================================== */
+
+    .page-card {
+      width: 100%;
+      max-width: 860px;
+      margin: auto;
+
+      background: #ffffff;
+      border-radius: 28px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 20px 55px rgba(18, 84, 130, 0.22);
+    }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .hero {
+      position: relative;
+      padding: 34px 32px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0f6fc4 0%,
+          #148fce 55%,
+          #29acd5 100%
+        );
+
+      color: white;
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .doctor-circle {
+      width: 96px;
+      height: 96px;
+      min-width: 96px;
+
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.96);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: rgba(255,255,255,.10);
+
+      box-shadow:
+        0 8px 22px rgba(0,0,0,.14);
+
+      font-size: 40px;
+    }
+
+    .doctor-info {
+      flex: 1;
+    }
+
+    .doctor-info h1 {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 6px;
+
+      color: #ffffff;
+
+      text-shadow:
+        0 2px 5px rgba(0,0,0,.16);
+    }
+
+    .doctor-info p {
+      font-size: 19px;
+      font-weight: 700;
+      color: #e9f8ff;
+      line-height: 1.8;
+    }
+
+    .available {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      margin-top: 12px;
+      padding: 7px 14px;
+
+      border-radius: 20px;
+
+      background: rgba(255,255,255,.18);
+
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .available i {
+      font-size: 8px;
+      color: #dfffea;
+    }
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .content {
+      padding: 30px 28px 34px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =====================================================
+       SECTION TITLES
+    ===================================================== */
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      padding: 11px 15px;
+      margin-bottom: 16px;
+
+      border-radius: 13px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e5f3ff,
+          #f5faff
+        );
+
+      border-right: 5px solid #1476c9;
+
+      font-size: 22px;
+      font-weight: 900;
+
+      color: #0b5fa8;
+    }
+
+    .section-title i {
+      font-size: 21px;
+      color: #1476c9;
+    }
+
+    /* =====================================================
+       BOOKING NOTICE
+    ===================================================== */
+
+    .booking-notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+
+      padding: 18px 20px;
+      margin-bottom: 18px;
+
+      background: #f4f9ff;
+
+      border: 1px solid #c9e2f6;
+      border-radius: 16px;
+
+      color: #395f7b;
+
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 2;
+
+      box-shadow:
+        0 5px 16px rgba(45,105,150,.07);
+    }
+
+    .notice-icon {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 11px;
+
+      background: #dceeff;
+      color: #0f76c8;
+
+      font-size: 20px;
+    }
+
+    /* =====================================================
+       GENERAL BUTTON
+    ===================================================== */
+
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      width: 100%;
+
+      padding: 17px 19px;
+
+      border-radius: 17px;
+
+      text-decoration: none;
+
+      transition:
+        transform .20s ease,
+        box-shadow .20s ease,
+        border-color .20s ease;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .action-btn:active {
+      transform: scale(.985);
+    }
+
+    .action-icon {
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 14px;
+
+      color: white;
+      font-size: 22px;
+    }
+
+    .action-text {
+      flex: 1;
+      text-align: right;
+    }
+
+    .action-text strong {
+      display: block;
+      margin-bottom: 3px;
+
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .action-text small {
+      display: block;
+
+      font-size: 13px;
+      font-weight: 600;
+
+      opacity: .76;
+    }
+
+    .action-arrow {
+      font-size: 18px;
+      opacity: .58;
+    }
+
+    /* =====================================================
+       MAIN BOOKING BUTTON
+    ===================================================== */
+
+    .booking-btn {
+      min-height: 128px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #dff1ff,
+          #cfe8ff
+        );
+
+      border: 2px solid #9ecdf2;
+
+      color: #0b5fa8;
+
+      box-shadow:
+        0 10px 26px rgba(19,101,170,.16);
+    }
+
+    .booking-btn:hover {
+      border-color: #78b5e6;
+
+      box-shadow:
+        0 14px 31px rgba(19,101,170,.22);
+    }
+
+    .booking-btn .action-icon {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+
+      font-size: 31px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1784d9,
+          #0d65b6
+        );
+
+      box-shadow:
+        0 7px 18px rgba(13,101,182,.25);
+    }
+
+    .booking-btn .action-text strong {
+      font-size: 27px;
+      font-weight: 900;
+
+      color: #0d5c9f;
+    }
+
+    .booking-btn .action-text small {
+      font-size: 16px;
+      font-weight: 700;
+
+      color: #5f88a9;
+    }
+
+    /* =====================================================
+       INFO BOX
+    ===================================================== */
+
+    .info-box {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      margin-top: 16px;
+
+      padding: 18px 19px;
+
+      border-radius: 16px;
+
+      background: #edf9f1;
+
+      border: 1px solid #bde3c8;
+
+      color: #2b7045;
+
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.9;
+    }
+
+    .info-box i {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 11px;
+
+      background: #32b963;
+
+      color: white;
+
+      font-size: 19px;
+    }
+
+    /* =====================================================
+       WHATSAPP GRID
+    ===================================================== */
+
+    .wa-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 13px;
+    }
+
+    .wa-btn {
+      min-height: 92px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ecfff3,
+          #dff8e8
+        );
+
+      border: 1px solid #a9dfbd;
+
+      color: #0c6a35;
+    }
+
+    .wa-btn:hover {
+      border-color: #75cea0;
+
+      box-shadow:
+        0 10px 22px rgba(37, 211, 102, .15);
+    }
+
+    .wa-btn .action-icon {
+      background:
+        linear-gradient(
+          135deg,
+          #2bd66a,
+          #15b653
+        );
+
+      font-size: 24px;
+    }
+
+    .wa-btn .action-text strong {
+      font-size: 20px;
+      font-weight: 900;
+
+      color: #0d6a38;
+    }
+
+    .wa-btn .action-text small {
+      font-size: 13px;
+      font-weight: 600;
+
+      color: #5a9771;
+    }
+
+    /* =====================================================
+       WHATSAPP WEB
+    ===================================================== */
+
+    .desktop-btn {
+      min-height: 92px;
+
+      background: #f5f6f8;
+
+      border: 1px solid #d8dbe0;
+
+      color: #3c4148;
+    }
+
+    .desktop-btn:hover {
+      border-color: #aeb4bc;
+
+      box-shadow:
+        0 8px 18px rgba(50,50,50,.08);
+    }
+
+    .desktop-btn .action-icon {
+      background:
+        linear-gradient(
+          135deg,
+          #62676e,
+          #41464d
+        );
+    }
+
+    .desktop-btn .action-text strong {
+      font-size: 20px;
+      font-weight: 900;
+
+      color: #303840;
+    }
+
+    .desktop-btn .action-text small {
+      font-size: 13px;
+    }
+
+    /* =====================================================
+       MAP BUTTON
+    ===================================================== */
+
+    .map-btn {
+      min-height: 100px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fff1e9,
+          #ffe3d4
+        );
+
+      border: 1px solid #f1b798;
+
+      color: #b74317;
+    }
+
+    .map-btn:hover {
+      border-color: #eb966e;
+
+      box-shadow:
+        0 10px 24px rgba(232,82,31,.14);
+    }
+
+    .map-btn .action-icon {
+      width: 58px;
+      height: 58px;
+      min-width: 58px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f56533,
+          #df4218
+        );
+
+      font-size: 25px;
+    }
+
+    .map-btn .action-text strong {
+      font-size: 22px;
+      font-weight: 900;
+
+      color: #b64219;
+    }
+
+    .map-btn .action-text small {
+      font-size: 14px;
+
+      color: #c3795b;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+      padding: 21px;
+
+      text-align: center;
+
+      border-top: 1px solid #e4edf4;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      color: #6f9abb;
+    }
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 650px) {
+
+      body {
+        padding: 9px;
+      }
+
+      .page-card {
+        border-radius: 19px;
+      }
+
+      .hero {
+        padding: 24px 18px;
+      }
+
+      .hero-inner {
+        gap: 14px;
+      }
+
+      .doctor-circle {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+
+        font-size: 29px;
+      }
+
+      .doctor-info h1 {
+        font-size: 26px;
+      }
+
+      .doctor-info p {
+        font-size: 15px;
+      }
+
+      .content {
+        padding: 22px 16px 27px;
+      }
+
+      .section-title {
+        font-size: 19px;
+      }
+
+      .booking-notice {
+        font-size: 15px;
+      }
+
+      .booking-btn {
+        min-height: 108px;
+      }
+
+      .booking-btn .action-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+
+        font-size: 25px;
+      }
+
+      .booking-btn .action-text strong {
+        font-size: 21px;
+      }
+
+      .booking-btn .action-text small {
+        font-size: 13px;
+      }
+
+      .wa-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .wa-btn .action-text strong {
+        font-size: 18px;
+      }
+
+      .desktop-btn .action-text strong {
+        font-size: 18px;
+      }
+
+      .map-btn .action-text strong {
+        font-size: 19px;
+      }
+
+      .action-arrow {
+        display: none;
+      }
+
+      .info-box {
+        font-size: 14px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
-<div class="card">
+  <div class="page-card">
 
-  <div class="hero">
-    <div class="photo-ring">
-      <img src="2021-09-09.jpg" alt="أستاذ دكتور علي قطب">
-    </div>
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
 
-    <div>
-      <h1>أستاذ دكتور علي قطب</h1>
-      <div class="role">أستاذ جراحة المخ والأعصاب والعمود الفقري</div>
-      <div class="live">● متاح للحجز</div>
-    </div>
-  </div>
+    <div class="hero">
 
-  <div class="body">
+      <div class="hero-inner">
 
-    <div class="sec">
-      <div class="sec-label">حجز المواعيد</div>
+        <div class="doctor-circle">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
 
-      <div class="grid-3">
-        <a href="https://calendly.com/alikotb/neurosurgery" target="_blank" class="btn b-blue">
-          <div class="ico"><i class="fa fa-calendar-check"></i></div>
-          <div class="txt"><strong>عيادة المحكمة- مصر الجديدة</strong><small>حجز مباشر</small></div>
-        </a>
+        <div class="doctor-info">
 
-        <a href="https://calendly.com/alikotb/wadi" target="_blank" class="btn b-blue">
-          <div class="ico"><i class="fa fa-hospital"></i></div>
-          <div class="txt"><strong>عيادة وادى النيل</strong><small>حجز مباشر</small></div>
-        </a>
+          <h1>
+            أستاذ دكتور علي قطب
+          </h1>
 
-        <a href="https://calendly.com/alikotb/tukh_neurosurgery" target="_blank" class="btn b-tukh">
-          <div class="ico"><i class="fa fa-calendar-plus"></i></div>
-          <div class="txt"><strong>عيادة طوخ</strong><small>حجز مباشر</small></div>
-        </a>
+          <p>
+            أستاذ جراحة المخ والأعصاب والعمود الفقري
+          </p>
+
+          <div class="available">
+            <i class="fa-solid fa-circle"></i>
+            متاح للحجز
+          </div>
+
+        </div>
+
       </div>
+
     </div>
 
-    <div class="sec">
-      <div class="sec-label">التواصل عبر واتساب</div>
 
-      <div class="grid">
-        <a href="https://wa.me/201014151508" target="_blank" class="btn b-wa">
-          <div class="ico"><i class="fab fa-whatsapp"></i></div>
-          <div class="txt"><strong>عيادة القاهرة</strong><small>iPhone / Android</small></div>
+    <div class="content">
+
+
+      <!-- ==================================================
+           BOOKING
+      =================================================== -->
+
+      <section class="section">
+
+        <div class="section-title">
+          <i class="fa-solid fa-calendar-check"></i>
+          حجز المواعيد
+        </div>
+
+
+        <div class="booking-notice">
+
+          <div class="notice-icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div>
+            وقت الحجز يمثل ترتيبًا زمنيًا للمواعيد المحجوزة،
+            وقد يحدث تأخير بسيط إذا احتاجت بعض الحالات السابقة
+            وقتًا أطول أثناء الكشف أو الاستشارة.
+          </div>
+
+        </div>
+
+
+        <a
+          href="https://script.google.com/macros/s/AKfycbwMtfjYsqnVTgJ5vwuMMkNFe_qCOFgwrIpEML-7sYpjgYKjNcIcpINUT_jIGJLpYPxQ/exec"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="action-btn booking-btn"
+        >
+
+          <div class="action-icon">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+
+          <div class="action-text">
+
+            <strong>
+              حجز عيادات أ.د. علي قطب
+            </strong>
+
+            <small>
+              اضغط هنا لاختيار العيادة والتاريخ والموعد المناسب
+            </small>
+
+          </div>
+
+          <div class="action-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
         </a>
 
-        <a href="https://wa.me/201090191039" target="_blank" class="btn b-wa">
-          <div class="ico"><i class="fab fa-whatsapp"></i></div>
-          <div class="txt"><strong>عمليات هليوبوليس</strong><small>iPhone / Android</small></div>
+
+        <div class="info-box">
+
+          <i class="fa-solid fa-clock"></i>
+
+          <div>
+            يرجى الالتزام بموعد الحجز قدر الإمكان للمساعدة
+            في انتظام ترتيب الحالات وتقليل وقت الانتظار.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           WHATSAPP
+      =================================================== -->
+
+      <section class="section">
+
+        <div class="section-title">
+          <i class="fa-brands fa-whatsapp"></i>
+          التواصل عبر واتساب
+        </div>
+
+
+        <div class="wa-grid">
+
+
+          <!-- Cairo Clinic -->
+          <a
+            href="https://wa.me/201014151508"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn wa-btn"
+          >
+
+            <div class="action-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="action-text">
+
+              <strong>
+                عيادة القاهرة
+              </strong>
+
+              <small>
+                iPhone / Android
+              </small>
+
+            </div>
+
+          </a>
+
+
+          <!-- Heliopolis Operations -->
+          <a
+            href="https://wa.me/201090191039"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn wa-btn"
+          >
+
+            <div class="action-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="action-text">
+
+              <strong>
+                عمليات هليوبوليس
+              </strong>
+
+              <small>
+                iPhone / Android
+              </small>
+
+            </div>
+
+          </a>
+
+
+          <!-- Wadi El Nile -->
+          <a
+            href="https://wa.me/201001703613"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn wa-btn"
+          >
+
+            <div class="action-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="action-text">
+
+              <strong>
+                وادي النيل
+              </strong>
+
+              <small>
+                iPhone / Android
+              </small>
+
+            </div>
+
+          </a>
+
+
+          <!-- General -->
+          <a
+            href="https://wa.me/201023967251"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn wa-btn"
+          >
+
+            <div class="action-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class="action-text">
+
+              <strong>
+                استفسارات عامة
+              </strong>
+
+              <small>
+                موبايل
+              </small>
+
+            </div>
+
+          </a>
+
+
+          <!-- WhatsApp Web -->
+          <a
+            href="https://web.whatsapp.com/send?phone=201023967251"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn desktop-btn"
+          >
+
+            <div class="action-icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+
+            <div class="action-text">
+
+              <strong>
+                واتساب الكمبيوتر
+              </strong>
+
+              <small>
+                WhatsApp Web
+              </small>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================================================
+           LOCATION
+      =================================================== -->
+
+      <section class="section">
+
+        <div class="section-title">
+          <i class="fa-solid fa-location-dot"></i>
+          الموقع
+        </div>
+
+
+        <a
+          href="https://maps.app.goo.gl/kneM2xHcoW8rMNJ5A?g_st=iw"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="action-btn map-btn"
+        >
+
+          <div class="action-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div class="action-text">
+
+            <strong>
+              عرض الموقع على الخريطة
+            </strong>
+
+            <small>
+              Google Maps
+            </small>
+
+          </div>
+
+          <div class="action-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
         </a>
 
-        <a href="https://wa.me/201001703613" target="_blank" class="btn b-wa">
-          <div class="ico"><i class="fab fa-whatsapp"></i></div>
-          <div class="txt"><strong>وادي النيل</strong><small>iPhone / Android</small></div>
-        </a>
+      </section>
 
-        <a href="https://wa.me/201023967251" target="_blank" class="btn b-wa">
-          <div class="ico"><i class="fab fa-whatsapp"></i></div>
-          <div class="txt"><strong>استفسارات عامة</strong><small>موبايل</small></div>
-        </a>
 
-        <a href="https://web.whatsapp.com/send?phone=201023967251" target="_blank" class="btn b-desktop">
-          <div class="ico"><i class="fa fa-desktop"></i></div>
-          <div class="txt"><strong>واتساب الكمبيوتر</strong><small>WhatsApp Web</small></div>
-        </a>
-      </div>
     </div>
 
-    <div class="sec">
-      <div class="sec-label">الموقع</div>
 
-      <a href="https://maps.app.goo.gl/kneM2xHcoW8rMNJ5A?g_st=iw" target="_blank" class="btn b-map">
-        <div class="ico"><i class="fa fa-map-marker-alt"></i></div>
-        <div class="txt"><strong>عرض الموقع على الخريطة</strong><small>Google Maps</small></div>
-      </a>
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <div class="footer">
+      أ.د. علي قطب · جراحة المخ والأعصاب والعمود الفقري · القاهرة
     </div>
+
 
   </div>
-
-  <div class="footer">
-    أ.د. علي قطب · جراحة المخ والأعصاب · القاهرة
-  </div>
-
-</div>
 
 </body>
+
 </html>
